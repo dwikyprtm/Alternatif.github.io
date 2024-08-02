@@ -1,0 +1,170 @@
+/* font Anton sc */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+/* font Butcherman */
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+/* font poopins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font arimo */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+/* font roboto */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* contact style */
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    background-color: #000000;
+    font-size: 78.5%;
+}
+body{
+    background-color: #000;
+    font-family: "Anton SC", sans-serif;
+}
+.container-contact{
+    background-color: #000;
+    padding: 5% 0 3%;
+}
+.container-contact .title{
+    padding-bottom: 15px;
+}
+.container-contact .title h2{
+    color: #fff;
+    border-bottom:1px solid #fff;
+    font-family: "poopins", sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.form{
+    padding: 15px 12px;
+    padding-right: 25px;
+    border-right: 1px solid #fff;
+}
+.form-control{
+    height: 45px;
+    border-radius: 0px;
+}
+.form-select{
+    height: 40px;
+    border-radius: 0px; 
+}
+#subject{
+    padding: 5px 10px;
+}
+.form-label span{
+    color: #bf0000;
+}
+.text-area{
+    height: 250px;
+}
+.form-label, .form-control, .form-select {
+    font-family: "poopins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 0 2px 7px;
+    color: #fff;
+    background-color: #000;
+    border-color: #ffffff;
+}
+.form-control:focus, .form-select:focus {
+    color: #fff;
+    background-color: #000;
+    border-color: #ffffff;
+    box-shadow: none;
+    border: 2px solid #ffffff;
+}
+.btn-submit{
+    padding: 15px 0;
+}
+.button:hover{
+    color: #fff;
+}
+.btn{
+    font-family: "poopins", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    --bs-btn-padding-x: .2rem;
+}
+.social-icons a {
+    color: #fff;
+    margin: 0 1px;
+}
+.media{
+    padding: 15px 14px  0;
+}
+.media h2{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "poopins", sans-serif;
+    color: #fff;
+}
+.maps{
+    padding: 20px 1px 0;
+    width: 350px;
+    height: 200px;
+}
+.maps iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+@media (max-width: 991) {
+    
+}
+@media (max-width: 767px){
+    .container-contact{
+        background-color: #000;
+        padding: 8% 0 3%;
+    }
+    .media{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 14px  0;
+    }
+    .form{
+        flex-direction: column;
+        padding: 15px 12px;
+        padding-right: 0px;
+        border-bottom: 1px solid #fff;
+        border-right: none;
+    }
+    .btn-submit{
+        text-align: center;
+        padding: 15px 0;
+    }
+    .maps{
+        padding: 20px 1px 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 566px){
+    .container-contact{
+        background-color: #000;
+        padding: 9% 2% 0;
+    }
+    .form{
+        flex-direction: column;
+        padding: 15px 12px;
+        padding-right: 0px;
+        border-bottom: 1px solid #fff;
+        border-right: none;
+    }
+    .maps{
+        padding: 20px  0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+}

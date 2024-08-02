@@ -1,0 +1,274 @@
+/* font Anton sc */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+/* font Butcherman */
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+/* font poopins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font arimo */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+/* font roboto */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+       *{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html{
+  background-color: #0C0C0C;
+  font-size: 78.5%;
+}
+body{
+  background-color: #ffffff;
+  font-family: "Anton SC", sans-serif;
+}
+        .small-img-group{
+            display: flex;
+            justify-content: space-between;
+        }
+        .small-img-col{
+            flex-basis: 23.8%;
+        }
+        #imgZom {
+            cursor: zoom-in;
+            width: 100%; 
+            max-width: 455px;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+        }
+        #imgZom img {
+            width: 100%;
+            height: auto;
+            transition:all 0.3s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .Sdetails-img img,
+        .small-img-col img{
+           background: #f1f1f1;
+        }
+        .small-img-col img{
+            cursor: pointer;
+        }
+        .title-Sdetails h6{
+            color: #c2c2c2;
+            font-family: "poopins", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            padding-bottom: 5px;
+        }
+        .title-Sdetails h2{
+            color: #0C0C0C;
+            font-family: "poopins", sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+        .title-Sdetails .des{
+            font-weight: 400;
+            padding: 20px 0;
+            margin: 20px 0;
+            border-top: 1px solid #0C0C0C;
+            border-bottom: 1px solid #0C0C0C;
+            color: #000000;
+        }
+        .title-Sdetails p{
+            color: #919191;
+            font-family: "poopins", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .title-Sdetails input{
+            width: 70px;
+            height: 35px;
+            padding-left: 30px;
+            margin-right: 5px;
+        }
+        .title-Sdetails input:focus{
+            outline: none;
+        }
+        .title-Sdetails button{
+            background-color: #0C0C0C;
+            border: none;
+            box-shadow: none;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: "poopins", sans-serif;
+            font-weight: 700;
+        }
+        .catagories{
+            padding: 20px 0;
+        }
+        .catagories p{
+            padding: 2px 0;
+            color: #474747;
+        }
+        .catagories p span{
+            /* padding: 0 5px; */
+            color: #6f6f6f;
+        }
+        .catagories p span a{
+            padding: 0 5px;
+            color: #6f6f6f;
+        }
+        /* servie start */
+        .service{
+            display: flex;
+            flex-direction: column;
+            padding: 1% 2.5%;
+            background-color: #fff;
+            /* min-height: 100vh; */
+            width: 100%;
+        }
+        .service .title h2{
+            font-family: "poopins", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 1.1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            line-height: 25px;
+        }
+        .service .row{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .card{
+            border: none;
+            background-color: transparent;
+            margin-top: -40px;
+            overflow: hidden;
+        }
+        .card .card-img img{
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .card-img .rear-img{
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: opacity .6s ease-in;
+        }
+        .card:hover .rear-img{
+            opacity: 1;
+            z-index: 0;
+            cursor: pointer;
+        }
+        .card:hover .front-img{
+            opacity: 0;
+        }
+        .card .card-body .card-title{
+            font-family: 20px;
+            text-transform: uppercase;
+            font-family: "poopins", sans-serif;
+            font-weight:700;
+            letter-spacing: 1.2px;
+        }
+        /* servie end */
+
+/* media querys  */
+@media (max-width: 991px){
+        .small-img-col {
+            flex-basis: 24%; /* Atur ulang lebar elemen untuk ukuran layar sedang */
+        }
+    
+        #imgZom {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .title-Sdetails h2 {
+            font-size: 20px; /* Kurangi ukuran font untuk layar lebih kecil */
+        }
+    
+        .title-Sdetails p {
+            font-size: 12px; /* Sesuaikan ukuran font untuk layar lebih kecil */
+        }
+    
+        .title-Sdetails input {
+            width: 60px;
+            padding-left: 20px;
+        }
+    
+        .title-Sdetails button {
+            font-size: 16px;
+        }
+    }
+    .service .row{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+@media (max-width: 768px) {
+    .small-img-col {
+        flex-basis: 24%;
+        margin-bottom: 10px;
+    }
+
+    #imgZom {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .title-Sdetails h2 {
+        font-size: 20px; /* Kurangi ukuran font untuk layar lebih kecil */
+    }
+
+    .title-Sdetails p {
+        font-size: 12px; /* Sesuaikan ukuran font untuk layar lebih kecil */
+    }
+
+    .title-Sdetails input {
+        width: 60px;
+        padding-left: 20px;
+    }
+
+    .title-Sdetails button {
+        font-size: 16px;
+    }
+     /* service start */
+    .service .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+/* service end */
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    .small-img-col {
+        flex-basis: 24%; 
+        margin-bottom: 10px;
+    }
+
+    .title-Sdetails h2 {
+        font-size: 18px;
+    }
+
+    .title-Sdetails p {
+        font-size: 10px;
+    }
+
+    .title-Sdetails input {
+        width: 50px;
+        padding-left: 15px;
+    }
+
+    .title-Sdetails button {
+        font-size: 14px;
+    }
+     /* sevice start */
+ .service .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* sevice end */
+}
